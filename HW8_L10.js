@@ -8,7 +8,7 @@
 Не повинен знаходити: Happiness, Time, Task, Apple  */
 
 var str = "Wonderful Happiness Joyful Time Task Apple";
-var re = /\b[^Aa]{6,}\b/;
+var re = /\b[^Aa\s]{6,}\b/g; 
 
 var res = str.match(re);
 console.log(res);
